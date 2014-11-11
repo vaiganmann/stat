@@ -1,0 +1,38 @@
+D:/altera/stat/memory.sv {1 {vlog -work work -vopt -sv {D:\altera\stat\memory.sv}
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling package definitions_main
+-- Compiling package definitions_bus
+-- Compiling package definitions_mem
+-- Compiling interface main_bus
+-- Importing package definitions_bus
+-- Compiling module mem
+-- Importing package definitions_mem
+
+Top level modules:
+	mem
+
+} {} {}} D:/altera/stat/buses.sv {1 {vlog -work work -vopt -sv D:/altera/stat/buses.sv
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling interface main_bus
+-- Importing package definitions_bus
+
+Top level modules:
+	--none--
+
+} {} {}} D:/altera/stat/packages.sv {1 {vlog -work work -vopt -sv D:/altera/stat/packages.sv
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling package definitions_main
+-- Compiling package definitions_bus
+-- Compiling package definitions_mem
+
+Top level modules:
+	--none--
+
+} {} {}} D:/altera/stat/fifo.sv {1 {vlog -work work -vopt -sv D:/altera/stat/fifo.sv
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module fifo
+
+Top level modules:
+	fifo
+
+} {} {}}
