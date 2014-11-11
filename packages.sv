@@ -20,7 +20,7 @@ parameter A_WIDTH = `A_W;
 parameter D_WIDTH = `D_W;
  
 typedef struct {
-	bit write_flag_into_mem, read_flag_into_mem_wr;
+	bit write_flag_into_mem, read_flag_mem_wr;
 	logic [A_WIDTH-1:0] rx_flow_num_i;
 	logic [15:0] pkt_size_i;
 } StatesBusWrite;
@@ -28,7 +28,7 @@ typedef struct {
 typedef struct {
 	bit read_flag_from_mem;	
 	logic [A_WIDTH-1:0] rd_flow_num_i;
-
+	logic [15:0] pkt_size_i;
 } StatesBusRead;
 
   

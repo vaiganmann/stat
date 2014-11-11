@@ -10,13 +10,13 @@ module fifo
   
 input     logic            rst_i, clk_i, wr_en, rd_en,   
 // reset, system clock, write enable and read enable.
-input     logic [D_WIDTH-1:0]           buf_in,                   
+input     bit [D_WIDTH-1:0]           buf_in,                   
 // data input to be pushed to buffer
-output    logic [D_WIDTH-1:0]           buf_out,                  
+output    bit [D_WIDTH-1:0]           buf_out,                  
 // port to output the data using pop.
 output    bit          buf_empty, buf_full,      
 // buffer empty and full indication 
-output    logic [FIFO_WIDTH-1:0] fifo_counter             
+output    bit [FIFO_WIDTH-1:0] fifo_counter             
 // number of data pushed in to buffer  
 );
 
@@ -83,7 +83,7 @@ begin
       if( !buf_full && wr_en )    wr_ptr <= wr_ptr + 1;
           else  wr_ptr <= wr_ptr;
 
-      if( !buf_empty && rd_en )   rd_ptr <= rd_ptr + 1;
+      if( !buf_empty && rd_en)  rd_ptr <= rd_ptr + 1; 
       else rd_ptr <= rd_ptr;
    end
 

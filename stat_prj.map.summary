@@ -1,0 +1,20 @@
+Analysis & Synthesis Status : Successful - Tue Nov 11 22:09:15 2014
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : stat_prj
+Top-level Entity Name : stat_prj
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 254
+    Memory ALUTs : 0
+    Dedicated logic registers : 122
+Total registers : 122
+Total pins : 73
+Total virtual pins : 0
+Total block memory bits : 1,050
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
