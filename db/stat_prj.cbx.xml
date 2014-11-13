@@ -1,9 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="stat_prj">
-		<CBX_INST_ENTRY INSTANCE_NAME="|stat_prj|fifo:fifo_buf_data|altsyncram:buf_mem_rtl_0" CBX_FILE_NAME="altsyncram_28i1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|stat_prj|fifo:fifo_buf_data|altsyncram:buf_mem_rtl_1" CBX_FILE_NAME="altsyncram_28i1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|stat_prj|fifo:fifo_buf_ptr|altsyncram:buf_mem_rtl_2" CBX_FILE_NAME="altsyncram_o7i1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|stat_prj|fifo:fifo_buf_ptr|altsyncram:buf_mem_rtl_3" CBX_FILE_NAME="altsyncram_o7i1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

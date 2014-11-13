@@ -3,197 +3,45 @@ K3
 13
 cModel Technology
 dD:\altera\serializer
-Xdefinitions
+vstat_prj
 Z0 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-VdE;ASd6OLGbRzWb;g0AII3
-r1
-31
-IdE;ASd6OLGbRzWb;g0AII3
-S1
-Z1 dD:\altera\stat
-w1415061867
-Z2 Fpackages.sv
-Z3 8D:\altera\stat\main.sv
-Z4 FD:\altera\stat\main.sv
-L0 4
-Z5 OL;L;10.1c;51
-Z6 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z7 !s90 -reportprogress|300|-work|work|-vopt|-sv|D:\altera\stat\main.sv|
-!s107 memory.sv|buses.sv|packages.sv|D:\altera\stat\main.sv|
-!s108 1415061882.216000
-!s100 W3T:2?L6l9XAfQJf09D0H3
-!s85 0
-!i10b 1
-Xdefinitions_bus
-Z8 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-V>8h_Zi;FNjX=70zl=8lYX2
-r1
-31
-I>8h_Zi;FNjX=70zl=8lYX2
-S1
-R1
-Z9 w1415701516
-R2
-R3
-R4
-L0 17
-R5
-Z10 !s108 1415701713.527000
-Z11 !s107 fifo.sv|memory.sv|buses.sv|packages.sv|D:\altera\stat\main.sv|
-R7
-R6
-!s100 BZ=2ej^X5JSHNP5^OhFE_2
-!s85 0
-!i10b 1
-Xdefinitions_main
-R8
-Vb8aW;3HdF>eG_CjHoHzFO0
-r1
-31
-Ib8aW;3HdF>eG_CjHoHzFO0
-S1
-R1
-R9
-R2
-R3
-R4
-L0 10
-R5
-R10
-R11
-R7
-R6
-!s100 X@VTLjI_4n<fn[;l[nV`k3
-!s85 0
-!i10b 1
-Xdefinitions_mem
-R8
-V1HG9:Tdd6SVO6NOE8PfD81
-r1
-31
-I1HG9:Tdd6SVO6NOE8PfD81
-S1
-R1
-R9
-R2
-R3
-R4
-L0 37
-R5
-R10
-R11
-R7
-R6
-!s100 6<QKNF4lX7j0lW=Z5hZ7P0
-!s85 0
-!i10b 1
-vfifo
-R8
-I>E^<Ye_gE9B6AP4FdIGn73
-V]oBiUH4hIe;;a>R79TZe02
-S1
-R1
-w1415718469
-8D:\altera\stat\fifo.sv
-FD:\altera\stat\fifo.sv
-L0 3
-R5
-r1
-31
-R6
-!s100 II:5N<>`6z@CaEabQhilW0
-!s105 fifo_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|D:\altera\stat\fifo.sv|
-!i10b 1
-!s85 0
-!s108 1415731401.556000
-!s107 D:\altera\stat\fifo.sv|
-Ymain_bus
-R8
-Z12 DXx4 work 15 definitions_bus 0 22 >8h_Zi;FNjX=70zl=8lYX2
-VK:[d_K0M73M^i9AlEfD?<0
-r1
-31
-IbRACoV=YOb1aK4[M@c]El1
-Z13 !s105 main_sv_unit
-S1
-R1
-R9
-Fbuses.sv
-R3
-R4
-L0 3
-R5
-R10
-R11
-R7
-R6
-!s100 14Z5BM5AnNjnkW499Ik2L3
-!s85 0
-!i10b 1
-vmem
-R8
-DXx4 work 15 definitions_mem 0 22 1HG9:Tdd6SVO6NOE8PfD81
-R12
-I1ITFm@>5_B7<K@OREBMk=0
-VziZFLTCMoUb5Y:]>k;J5j0
-S1
-R1
-w1415701206
-8D:\altera\stat\memory.sv
-FD:\altera\stat\memory.sv
-L0 8
-R5
-r1
-31
-R6
-!s100 Wf8;`kDLENma8WXgXBnZm0
-!s105 memory_sv_unit
-!s108 1415701712.805000
-!s107 buses.sv|packages.sv|D:\altera\stat\memory.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|D:\altera\stat\memory.sv|
-!i10b 1
-!s85 0
-vstat
-R8
-V::A8bbJ=2]B1Ol0EUV3QJ2
+VoRLE8e;DSdlJPS8jSQKJP1
 r1
 !s85 0
 31
-IC70J`8zS9<GifC3zSb7SU0
-R13
+IFBKSGC6=8Pd4W<1[;Wo611
+Z1 !s105 main_sv_unit
 S1
-R1
-Z14 w1415731382
-R3
-R4
-Ffifo.sv
+Z2 dD:\altera\stat
+Z3 w1415896679
+Z4 8D:/altera/stat/main.sv
+Z5 FD:/altera/stat/main.sv
 L0 1
-R5
-Z15 !s108 1415731401.184000
-Z16 !s107 fifo.sv|D:\altera\stat\main.sv|
-R7
-R6
-!s100 <AC<jj9HZ>^SlLJPSZ44J0
+Z6 OL;L;10.1c;51
+Z7 !s108 1415896776.825000
+Z8 !s107 D:/altera/stat/main.sv|
+Z9 !s90 -reportprogress|300|-work|work|-vopt|-sv|D:/altera/stat/main.sv|
+Z10 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 `RY<ONR?ZfN^BZHH`JQ610
 !i10b 1
 vtestbench
-R8
+Z11 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
 VHVmH5ONI5hRU?fN5kBMco1
 r1
 31
-ISi^VN7W8@;NDZlX6<1C;R3
-R13
-S1
+IdSj<X`ZI;9M`O0Qfbl38V1
 R1
-R14
+S1
+R2
 R3
 R4
-L0 220
 R5
-R15
-R16
-R7
+L0 79
 R6
+R7
+R8
+R9
+R10
 !s85 0
-!s100 cVi50_CG^X[;GXm@kVKJf2
 !i10b 1
+!s100 BHa2B<B11L0P[^HYX_92e3
