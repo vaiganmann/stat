@@ -3,8 +3,7 @@ use verilog.vl_types.all;
 entity stat_prj is
     generic(
         A_WIDTH         : integer := 10;
-        D_WIDTH         : integer := 32;
-        FIFO_WIDTH      : integer := 20
+        D_WIDTH         : integer := 32
     );
     port(
         clk_i           : in     vl_logic;
@@ -20,5 +19,4 @@ entity stat_prj is
     attribute mti_svvh_generic_type : integer;
     attribute mti_svvh_generic_type of A_WIDTH : constant is 1;
     attribute mti_svvh_generic_type of D_WIDTH : constant is 1;
-    attribute mti_svvh_generic_type of FIFO_WIDTH : constant is 1;
 end stat_prj;

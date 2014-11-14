@@ -17,9 +17,10 @@ module stat_prj
 	output logic rd_data_val_o	
 );
 
+localparam ADDR_CNT = 2**A_WIDTH;
 
 //Define memory storage
-bit [D_WIDTH-1:0] mem [int'(2'b10<<(A_WIDTH-1))-1:0];
+bit [D_WIDTH-1:0] mem [ADDR_CNT-1];
 
 
 
@@ -27,46 +28,21 @@ bit [D_WIDTH-1:0] mem [int'(2'b10<<(A_WIDTH-1))-1:0];
 //     Finite State machine for writing: Next State assigning
 //****************************************************************
 
-bit tmp;
+always_ff @(posedge clk_i) begin
 
-always_ff @(posedge clk_i or negedge rst_i) begin
-    if (!rst_i) 
-      begin
         if(pkt_size_en_i)
           begin
-           //mem_read = mem[int'(rx_flow_num_i)];
            mem[int'(rx_flow_num_i)] = mem[int'(rx_flow_num_i)] + pkt_size_i;
           end
-        //else mem[int'(rx_flow_num_i)] <= mem[int'(rx_flow_num_i)];
           
         if(rd_stb_i) 
           begin
             rd_data_val_o <= 1;
             rd_data_o = mem[rd_flow_num_i];
             mem[rd_flow_num_i] = 0;
-          end
-        else 
-          begin 
-            rd_data_val_o <= 0;
-            rd_data_o <= 0;
-          end
-          
-      end    
-    else 
-      begin
-            rd_data_val_o <= 0;
-            rd_data_o <= 0;
-            mem[int'(rx_flow_num_i)] = mem[int'(rx_flow_num_i)];
-      end   
+          end         
 end
 
-/*always_ff @(negedge clk_i) begin
-			if(!clk_i)if(rd_data_val_o)
-			  begin
-			     mem[rd_flow_num_i] <= 0;
-			     tmp = !tmp;
-		 end
-end*/
 endmodule
 
 
@@ -92,7 +68,7 @@ module testbench
 	logic [D_WIDTH-1:0] rd_data_o;
 	logic rd_data_val_o;	 
 
-  stat_prj #(.A_WIDTH(A_WIDTH), .D_WIDTH(D_WIDTH), .FIFO_WIDTH(20)) DUT(.* , .rst_i(1'b0));
+  stat_prj #(.A_WIDTH(A_WIDTH), .D_WIDTH(D_WIDTH)) DUT(.* , .rst_i(1'b0));
 
 
 bit [A_WIDTH-1:0] count, count2, count3;
@@ -105,7 +81,7 @@ always_ff @(posedge clk_i) begin
   if (clk_i)
     begin
       
-      if(count<=2'b10<<A_WIDTH-4)
+      if(count<=10)
        begin
         pkt_size_en_i <= 1;
         pkt_size_i    <= ++count;     
