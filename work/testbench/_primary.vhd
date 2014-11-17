@@ -2,7 +2,7 @@ library verilog;
 use verilog.vl_types.all;
 entity testbench is
     generic(
-        A_WIDTH         : integer := 10;
+        A_WIDTH         : integer := 4;
         D_WIDTH         : integer := 32
     );
     attribute mti_svvh_generic_type : integer;
