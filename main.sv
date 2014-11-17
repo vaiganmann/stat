@@ -18,7 +18,7 @@ module stat_prj
 	output logic rd_data_val_o
 );
 
-logic [D_WIDTH-1:0] tmp;
+logic [D_WIDTH-1:0] rd_data_o_2;
 bit we;
 
 	// Declare the RAM variable
@@ -41,7 +41,7 @@ bit we;
 	// Port B 
 	always_ff @ (posedge clk_i)
 	begin
-		logic [D_WIDTH-1:0] rd_data_o_2;
+		
 		if (rd_stb_i) 
 		begin
 			ram[rd_flow_num_i] <= 0;
